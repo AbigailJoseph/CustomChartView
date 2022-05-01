@@ -82,10 +82,12 @@ public struct LineChartView: View {
                                     Image(systemName: "arrow.down")
                                 }
                                 
+                                /* 
                                 Text("\(rateValue)%")
-                                /* ORIGINAL
+                                */
+                                
                                 Text("\(rateValue!)%")
-                                 */
+                               
                             }
                         }
                     }
@@ -145,16 +147,16 @@ public struct LineChartView: View {
 
 struct WidgetView_Previews: PreviewProvider {
     static var previews: some View {
-        
+        /*
         Group {
             LineChartView(data: [8,23,54,32,12,37,7,23,43], title: "Line chart", legend: "Basic", rateValue: 3)
                 .environment(\.colorScheme, .light)
             
             LineChartView(data: [282.502, 284.495, 283.51, 285.019, 285.197, 286.118, 288.737, 288.455, 289.391, 287.691, 285.878, 286.46, 286.252, 284.652, 284.129, 284.188], title: "Line chart", legend: "Basic", rateValue: 3)
             .environment(\.colorScheme, .light)
-        }
+        } */
         
-        /* ORIGINAL
+       
         Group {
             LineChartView(data: [8,23,54,32,12,37,7,23,43], title: "Line chart", legend: "Basic")
                 .environment(\.colorScheme, .light)
@@ -162,6 +164,6 @@ struct WidgetView_Previews: PreviewProvider {
             LineChartView(data: [282.502, 284.495, 283.51, 285.019, 285.197, 286.118, 288.737, 288.455, 289.391, 287.691, 285.878, 286.46, 286.252, 284.652, 284.129, 284.188], title: "Line chart", legend: "Basic")
             .environment(\.colorScheme, .light)
         }
-         */
+        
     }
 }
